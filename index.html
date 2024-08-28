@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estranha Casa</title>
+</head>
+<body>
+    <main>
+        <!-- Introdução -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/casa abandonada.jpg" alt="Casa Abandonada">
+            <p>
+                Você acorda abruptamente, a sensação de um sonho vívido ainda pairando em sua mente. Naquele sonho, você se via explorando uma casa estranha, cheia de corredores escuros e quartos em ruínas. O mistério da casa parecia palpável, quase como se estivesse tentando te chamar de volta.
+
+                Agora, porém, a realidade é bem diferente. Você tenta se levantar, mas a dor nas costas faz com que você sinta uma pontada a cada movimento. Ao abrir os olhos, a escuridão do quarto não é tão gentil quanto a luz do sonho.
+
+                O quarto ao seu redor está em completo estado de abandono. As janelas estão pregadas com tábuas de madeira, e alguns vidros quebrados estão espalhados pelo chão, refletindo uma luz fraca que entra por pequenas rachaduras. O ar é pesado e fétido, carregado com o odor de mofo e deterioração. O papel de parede descascado e o chão coberto de poeira criam um ambiente que faz com que você se sinta desconfortável e inquieto.
+
+                Você tenta se lembrar de como chegou aqui, mas sua mente está turva, como se o próprio ar do lugar estivesse prejudicando seu pensamento. O mistério do sonho parece agora uma realidade ainda mais perturbadora, e a sensação de déjà vu é quase esmagadora.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Criado Mudo Velho</button>
+            <button class="btn-proximo" data-proximo="2">Cama Velha</button>
+        </div>
+
+        <!-- Escolha do criado mudo -->
+        <div class="passo" id="passo-1">
+            <p>
+                Você observa o par de luvas de couro, degastadas e velhas, repousando sobre a mesa. Sem hesitar, você decide pegá-las. Ao vesti-las, sente um leve frio se espalhar por suas mãos. De repente, uma sensação estranha toma conta de você. O silêncio da mansão parece se intensificar, e um sussurro quase imperceptível começa a preencher o ambiente, transformando-se em um rangido suave, como se a própria casa estivesse se contorcendo e reclamando dos segredos que há muito guarda.
+
+                Agora com as luvas, você pode explorar a casa de maneiras diferentes. Talvez seja uma boa ideia verificar a cama velha ou investigar a porta enterrada do lado de fora.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Porta</button>
+            <button class="btn-proximo" data-proximo="2">Cama Velha</button>
+        </div>
+
+        <!-- Escolha da cama velha -->
+        <div class="passo" id="passo-2">
+            <p>
+                Você se aproxima da cama velha no canto do quarto. O colchão está coberto de poeira e manchas, com a estrutura de madeira estalando a cada passo que você dá. As colchas, embora empoeiradas e rasgadas, ainda parecem resistir ao desgaste do tempo. O cheiro de mofo é forte e inconfundível, misturando-se com o aroma de madeira envelhecida.
+
+                Enquanto você examina a cama, nota algo peculiar: ao olhar mais de perto, percebe uma rachadura nas tábuas do chão logo abaixo dela. A fenda é estreita, mas o suficiente para que você possa ver um pouco do que está escondido por baixo. A rachadura parece se aprofundar no chão, como se houvesse um espaço oco ou um buraco desconhecido.
+            </p>
+            <button class="btn-proximo" data-proximo="5">Examinar</button>
+            <button class="btn-proximo" data-proximo="6">Ignorar</button>
+        </div>
+
+        <!-- Examinar a rachadura abaixo da cama -->
+        <div class="passo" id="passo-5">
+            <p>
+                Você decide examinar a rachadura com mais cuidado. Usando as luvas para proteger suas mãos do pó e das tábuas afiadas, você consegue remover algumas tábuas soltas. A rachadura se revela como um túnel escuro e estreito, aparentemente levando para baixo. Há um feixo de madeira preso na entrada, o que sugere que o túnel pode ter sido selado intencionalmente.
+
+                Agora você tem duas opções: tentar remover o feixo e explorar o túnel ou voltar e explorar o criado mudo.
+            </p>
+            <button class="btn-proximo" data-proximo="7">Remover Feixo</button>
+            <button class="btn-proximo" data-proximo="1">Criado Mudo Velho</button>
+        </div>
+
+        <!-- Remover o feixo e explorar o túnel -->
+        <div class="passo" id="passo-7">
+            <p>
+                Usando as luvas, você consegue remover o feixo e descer pelo túnel escuro. O caminho é estreito e tortuoso, mas você consegue avançar com cuidado. Após algum tempo, o túnel se alarga, revelando uma caverna subterrânea. No fundo da caverna, você descobre um navio pirata antigo escondido e um tesouro magnífico.
+
+                A imagem à sua frente é impressionante e recompensa toda a sua jornada. Você encontrou o tesouro e conseguiu escapar da mansão. A aventura chega ao fim com um final glorioso e recompensador!
+            </p>
+            <img src="img/fim_tunel.jpg" alt="Fim do Túnel">
+            <button class="btn-proximo" data-proximo="end-feliz">Final Feliz</button>
+        </div>
+
+        <!-- Ignorar a rachadura -->
+        <div class="passo" id="passo-6">
+            <p>
+                Você decide ignorar a rachadura e volta a explorar o quarto. Sem novas descobertas imediatas, você sente a sensação de estar preso em um loop interminável de mistério e frustração. A casa parece não ter mais segredos a revelar, e você permanece no ambiente desconfortável sem mais pistas.
+            </p>
+            <button class="btn-proximo" data-proximo="end-infeliz">Final Infeliz</button>
+        </div>
+
+        <!-- Escolha da porta -->
+        <div class="passo" id="passo-3">
+            <p>
+                Você se dirige até a porta enterrada do lado de fora. O acesso à porta está parcialmente bloqueado por escombros e entulho. Com as luvas, você consegue remover parte do entulho e descobrir que a porta está trancada, mas parece haver uma pequena janela onde você pode espiar o que há do outro lado.
+
+                Ao olhar através da janela, você vê um corredor escuro e um cheiro de mofo intenso. Parece que o caminho leva a um novo conjunto de salas ou talvez a uma saída alternativa.
+            </p>
+            <button class="btn-proximo" data-proximo="8">Explorar o Corredor</button>
+            <button class="btn-proximo" data-proximo="1">Criado Mudo Velho</button>
+        </div>
+
+        <!-- Explorar o corredor -->
+        <div class="passo" id="passo-8">
+            <p>
+                Você decide explorar o corredor após abrir a porta. O corredor é escuro e estreito, e o cheiro de mofo é ainda mais forte. À medida que você avança, descobre que o corredor leva a uma série de salas em ruínas. Em uma das salas, você encontra um mapa antigo que indica a presença de um túnel secreto e um tesouro escondido.
+
+                Seguindo as indicações do mapa, você encontra um túnel escondido. Após uma breve exploração, você descobre que o túnel leva a uma caverna subterrânea com um navio pirata antigo e um tesouro magnífico. A aventura termina com um final glorioso!
+            </p>
+            <img src="img/fim_tunel.jpg" alt="Fim do Túnel">
+            <button class="btn-proximo" data-proximo="end-feliz">Final Feliz</button>
+        </div>
+
+        <!-- Final Feliz -->
+        <div class="passo" id="end-feliz">
+            <p>
+                Parabéns! Você encontrou o tesouro escondido e conseguiu escapar da mansão. A aventura termina com um final glorioso e recompensador!
+            </p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar Aventura</button>
+        </div>
+
+        <!-- Final Infeliz -->
+        <div class="passo" id="end-infeliz">
+            <p>
+                Infelizmente, você não conseguiu encontrar uma solução e a mansão continua a ser um mistério não resolvido. Você está preso no loop interminável de mistério e frustração.
+            </p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar Aventura</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
